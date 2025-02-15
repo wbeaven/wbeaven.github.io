@@ -3,9 +3,97 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>William Beaven</title>
+    <link rel="icon" type="image/x-icon" href="W_Icon_Dark_Sml.png" />
+
+    <style>
+      * {
+        margin: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: rgb(51, 51, 51);
+        color: white;
+        font-family: Arial, sans-serif;
+      }
+      .grid-container {
+        display: grid;
+        grid-template-areas:
+          "header header header header header header"
+          "menu main main main main main"
+          "footer footer footer footer footer footer";
+        background-color: rgb(51, 51, 51);
+        /*gap: 10px;*/
+      }
+      .grid-container > div {
+        font-size: 16px;
+      }
+      .item1 {
+        grid-area: header;
+        background-color: rgb(32, 32, 32);
+        padding: 30px 20px;
+        border-bottom: 3px solid rgb(41, 41, 41);
+      }
+      .item2 {
+        grid-area: menu;
+        background-color: rgb(32, 32, 32);
+        padding: 30px 0;
+        border-right: 3px solid rgb(41, 41, 41);
+        border-bottom: 3px solid rgb(41, 41, 41);
+      }
+      .item2 ul {
+        list-style-type: none;
+        margin-right: 40px;
+      }
+      .item2 li {
+        padding: 15px 0 15px 15px;
+        /*border: 2px inset rgb(41, 41, 41);*/
+      }
+      .item2  li:hover {
+        background-color: rgb(28, 28, 28);
+        border-radius: 10px;
+      }
+      .item3 {
+        grid-area: main;
+        padding: 30px 20px;
+        border-bottom: 3px solid rgb(41, 41, 41);
+      }
+      .item4 {
+        grid-area: footer;
+        background-color: rgb(32, 32, 32);
+        padding: 30px 20px;
+      }
+      @media only screen and (max-width: 500px) {
+        .item1 {grid-area: 1 / span 6;}
+        .item2 {grid-area: 2 / span 6;}
+        .item3 {grid-area: 3 / span 6;}
+        .item4 {grid-area: 4 / span 6;}
+      }
+    </style>
   </head>
+
   <body>
-    <h1>Hello world</h1>
+    <div class="grid-container">
+      <div class="item1">
+        <h1>
+          <span style="color: rgb(255, 215, 10)">{</span>
+          <span style="color: rgb(206, 145, 120)">Portfolio</span> :
+          <span style="color: rgb(156, 220, 254)">William_Beaven</span>
+          <span style="color: rgb(255, 215, 10)">}</span>
+        </h1>
+      </div>
+
+      <div class="item2">
+        <ul>
+          <li>Home</li>
+          <li>Game Development</li>
+          <li>Software Development</li>
+        </ul>
+      </div>
+
+      <div class="item3">main content</div>
+
+      <div class="item4">footer</div>
+    </div>
   </body>
 </html>
