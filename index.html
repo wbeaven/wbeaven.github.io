@@ -3,73 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>William Beaven</title>
     <link rel="icon" type="image/x-icon" href="W_Icon_Dark_Sml.png" />
-
-    <style>
-      * {
-        margin: 0;
-        box-sizing: border-box;
-      }
-      body {
-        background-color: rgb(51, 51, 51);
-        color: white;
-        font-family: Arial, sans-serif;
-      }
-      .grid-container {
-        display: grid;
-        grid-template-areas:
-          "header header header header header header"
-          "menu main main main main main"
-          "footer footer footer footer footer footer";
-        background-color: rgb(51, 51, 51);
-        /*gap: 10px;*/
-      }
-      .grid-container > div {
-        font-size: 16px;
-      }
-      .item1 {
-        grid-area: header;
-        background-color: rgb(32, 32, 32);
-        padding: 30px 20px;
-        border-bottom: 3px solid rgb(41, 41, 41);
-      }
-      .item2 {
-        grid-area: menu;
-        background-color: rgb(32, 32, 32);
-        padding: 30px 0;
-        border-right: 3px solid rgb(41, 41, 41);
-        border-bottom: 3px solid rgb(41, 41, 41);
-      }
-      .item2 ul {
-        list-style-type: none;
-        margin-right: 40px;
-      }
-      .item2 li {
-        padding: 15px 0 15px 15px;
-        /*border: 2px inset rgb(41, 41, 41);*/
-      }
-      .item2  li:hover {
-        background-color: rgb(28, 28, 28);
-        border-radius: 10px;
-      }
-      .item3 {
-        grid-area: main;
-        padding: 30px 20px;
-        border-bottom: 3px solid rgb(41, 41, 41);
-      }
-      .item4 {
-        grid-area: footer;
-        background-color: rgb(32, 32, 32);
-        padding: 30px 20px;
-      }
-      @media only screen and (max-width: 500px) {
-        .item1 {grid-area: 1 / span 6;}
-        .item2 {grid-area: 2 / span 6;}
-        .item3 {grid-area: 3 / span 6;}
-        .item4 {grid-area: 4 / span 6;}
-      }
-    </style>
+    <link rel="stylesheet" href="index.css" />
+    <title>William Beaven</title>
   </head>
 
   <body>
