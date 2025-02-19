@@ -23,14 +23,14 @@ body {
   grid-area: header;
   background-color: rgb(32, 32, 32);
   padding: 30px 20px;
-  border-bottom: 3px solid rgb(41, 41, 41);
+  /*border-bottom: 3px solid rgb(41, 41, 41);*/
 }
 .item2 {
   grid-area: menu;
   background-color: rgb(32, 32, 32);
   padding: 30px 0;
-  border-right: 3px solid rgb(41, 41, 41);
-  border-bottom: 3px solid rgb(41, 41, 41);
+  /*border-right: 3px solid rgb(41, 41, 41);
+  border-bottom: 3px solid rgb(41, 41, 41);*/
 }
 .item2 ul {
   list-style-type: none;
@@ -48,7 +48,7 @@ body {
 .item3 {
   grid-area: main;
   padding: 30px 20px;
-  border-bottom: 3px solid rgb(41, 41, 41);
+  /*border-bottom: 3px solid rgb(41, 41, 41);*/
 }
 .item4 {
   grid-area: footer;
@@ -68,4 +68,9 @@ body {
   .item4 {
     grid-area: 4 / span 6;
   }
+}
+li a {
+    display: block;
+    text-decoration: none;
+    color: white;
 }
