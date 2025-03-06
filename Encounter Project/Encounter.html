@@ -10,21 +10,51 @@
   <body>
     <div class="flex-container">
       <div class="flex-item-1">
-        <div class="flex-content">
-          <h1>Players</h1>
-          <ul>
-            <li>Total Health</li>
-          </ul>
+        <div class="flex-column-1">
+          <h1 class="content-header">Add a player</h1>
+          <label for="player-name-input">Player name</label><br />
+          <textarea name="player-name-input" id="player-name-input"></textarea>
+          <br /><br />
+          <label for="player-damage-input">Player average damage</label><br />
+          <textarea
+            name="player-damage-input"
+            id="player-damage-input"
+          ></textarea>
+          <br /><br />
+          <button onclick="setName()">Add player</button>
+        </div>
+
+        <div class="flex-column-2">
+          <h1 class="content-header">Players</h1>
+          <br />
+          <div id="name-holder">
+            <template>
+              <div>
+                <span>name and damage</span>
+                <img
+                  src="icon_cross.png"
+                  alt="cross"
+                  onclick="alert('Element deleted')"
+                  style="max-width: 3vh"
+                />
+              </div>
+            </template>
+          </div>
         </div>
       </div>
 
       <div class="flex-item-2">
-        <div class="flex-content">Enemies</div>
+        <div class="flex-content">
+          <h1 class="content-header">Enemies</h1>
+        </div>
       </div>
 
       <div class="flex-item-3">
-        <div class="flex-content">Result</div>
+        <div class="flex-content">
+          <h1 class="content-header">Encounter Results</h1>
+        </div>
       </div>
     </div>
+    <script src="Encounter.js"></script>
   </body>
 </html>
