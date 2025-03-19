@@ -24,11 +24,19 @@ function setName() {
   newContent = document.createTextNode(`${newName}, ${pDmg} damage`);
   newDiv.appendChild(newContent);
 
-  let img = document.createElement("img");
-  img.src = "icon_cross.png";
-  img.onclick = alert("Element deleted"); // why is the alert showing when i create a new player
-  let src = document.getElementById("newPlayer");
-  src.appendChild(img); // image is appending to first element with matching id
+  let newImg = document.createElement("img");
+  newImg.src = "icon_cross.png";
+  newImg.setAttribute("onclick", "deleteEntry(this)"); // why is the alert showing when i create a new player
+  let src = document.getElementById("name-holder").getElementsByTagName("div")[
+    players.length - 1
+  ];
+  src.appendChild(newImg);
+}
+
+function deleteEntry() {
+  node.parentElement.style.display = "none";
+  //   node.parentElement.
+  //   players.slice(this.parentElement.getElementsByTagName("div")[this])
 }
 
 // function showContent() {
@@ -43,3 +51,4 @@ function setName() {
 // img.onclick = alert("Element deleted");
 // let src = document.getElementById("newPlayer");
 // src.appendChild(img);
+let resultDiv = document.getElementById("results").appendChild();
